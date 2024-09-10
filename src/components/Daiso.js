@@ -1,5 +1,9 @@
 export default function Daiso() {
   return (
-    <div>다이소 페이지</div>
+    <>
+      <div className="daiso">
+        <div>다이소 페이지</div>
+      </div>
+    </>
   )
 }

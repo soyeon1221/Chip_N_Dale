@@ -67,3 +67,13 @@ ul, li {
 .modal div:hover {
   color: #4b1414;
 }
+
+
+/* Daiso */
+.daiso {
+  width: 100%;
+  position: relative;
+  max-width: 430px;
+  margin: 0 auto;
+  text-align: center;
+}
