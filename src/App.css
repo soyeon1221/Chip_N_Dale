@@ -50,6 +50,7 @@ ul, li {
   background-color: #bc7867;
   position: absolute;
   width: 100%;
+  z-index: 1000;
 }
 .modal div {
   color: #8d3131;
@@ -71,6 +72,16 @@ ul, li {
 
 /* Daiso */
 .daiso {
+  width: 100%;
+  position: relative;
+  max-width: 430px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* Shop */
+.shop {
   width: 100%;
   position: relative;
   max-width: 430px;
