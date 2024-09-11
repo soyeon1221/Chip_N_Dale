@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import main from './main.png';
+import main_img from './main.png';
 import Modal from './Modal';
 import { useLocation, Link } from 'react-router-dom';
 
@@ -40,7 +40,7 @@ export default function Header() {
           {modal && <Modal />}
         </div>
         <Link to='/' className='main-name'>Chip 'N Dale</Link>
-        <img className='main-img' src={main} width='200px' alt='Main' />
+        <img className='main-img' src={main_img} width='200px' alt='Main' />
       </div>
     </>
   )
