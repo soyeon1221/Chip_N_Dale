@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Chip_N_Dale/static/css/main.b02a77af.css",
-    "main.js": "/Chip_N_Dale/static/js/main.bb42567a.js",
+    "main.css": "/Chip_N_Dale/static/css/main.11d2192b.css",
+    "main.js": "/Chip_N_Dale/static/js/main.7a8cd295.js",
     "static/js/453.8eab7231.chunk.js": "/Chip_N_Dale/static/js/453.8eab7231.chunk.js",
     "static/media/main.png": "/Chip_N_Dale/static/media/main.0197f58d22aa1acb2444.png",
     "index.html": "/Chip_N_Dale/index.html",
-    "main.b02a77af.css.map": "/Chip_N_Dale/static/css/main.b02a77af.css.map",
-    "main.bb42567a.js.map": "/Chip_N_Dale/static/js/main.bb42567a.js.map",
+    "main.11d2192b.css.map": "/Chip_N_Dale/static/css/main.11d2192b.css.map",
+    "main.7a8cd295.js.map": "/Chip_N_Dale/static/js/main.7a8cd295.js.map",
     "453.8eab7231.chunk.js.map": "/Chip_N_Dale/static/js/453.8eab7231.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b02a77af.css",
-    "static/js/main.bb42567a.js"
+    "static/css/main.11d2192b.css",
+    "static/js/main.7a8cd295.js"
   ]
 }
