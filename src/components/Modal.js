@@ -11,7 +11,7 @@ export default function Modal() {
         <Link to="/daiso" className='modal_menu'>다이소</Link>
       </div>
       <div>
-      <Link to="/shop" className='modal_menu'>소품샵</Link>
+        <Link to="/shop" className='modal_menu'>소품샵</Link>
       </div>
     </div>
   )
