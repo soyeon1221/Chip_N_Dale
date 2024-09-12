@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/Chip_N_Dale/static/css/main.11d2192b.css",
-    "main.js": "/Chip_N_Dale/static/js/main.7a8cd295.js",
+    "main.css": "/Chip_N_Dale/static/css/main.e1b1c6f6.css",
+    "main.js": "/Chip_N_Dale/static/js/main.f7292ae3.js",
     "static/js/453.8eab7231.chunk.js": "/Chip_N_Dale/static/js/453.8eab7231.chunk.js",
+    "static/media/doll_tiger.jpg": "/Chip_N_Dale/static/media/doll_tiger.4ddb726085e1852eb915.jpg",
+    "static/media/props_haagendazs.jpg": "/Chip_N_Dale/static/media/props_haagendazs.6055100f988957ea7737.jpg",
     "static/media/main.png": "/Chip_N_Dale/static/media/main.0197f58d22aa1acb2444.png",
     "index.html": "/Chip_N_Dale/index.html",
-    "main.11d2192b.css.map": "/Chip_N_Dale/static/css/main.11d2192b.css.map",
-    "main.7a8cd295.js.map": "/Chip_N_Dale/static/js/main.7a8cd295.js.map",
+    "main.e1b1c6f6.css.map": "/Chip_N_Dale/static/css/main.e1b1c6f6.css.map",
+    "main.f7292ae3.js.map": "/Chip_N_Dale/static/js/main.f7292ae3.js.map",
     "453.8eab7231.chunk.js.map": "/Chip_N_Dale/static/js/453.8eab7231.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11d2192b.css",
-    "static/js/main.7a8cd295.js"
+    "static/css/main.e1b1c6f6.css",
+    "static/js/main.f7292ae3.js"
   ]
 }
