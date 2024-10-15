@@ -79,7 +79,7 @@ ul, li {
   text-align: center;
 }
 .main_wrap {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .main_box {
   display: flex;
@@ -101,8 +101,49 @@ ul, li {
 }
 
 
-/* Daiso */
-.daiso {
+/* ImageModal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  width: 280px;
+  background: #f5eeee;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+}
+.modal-text {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #4b1414;
+}
+.close-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e2a593;
+  color: #4b1414;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* Doll */
+.doll {
   width: 100%;
   position: relative;
   max-width: 430px;
@@ -111,8 +152,8 @@ ul, li {
 }
 
 
-/* Shop */
-.shop {
+/* Figures */
+.figures {
   width: 100%;
   position: relative;
   max-width: 430px;
