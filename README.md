@@ -16,7 +16,7 @@
 
 ## &#129294; Chip 'N Dale 바로가기
 
-[<img src="./public/icon.png" width="40" height="40">](https://soyeon1221.github.io/Chip_N_Dale) 아이콘 클릭!
+[<img src="./public/chip_n_dale_logo.png" width="40" height="40">](https://soyeon1221.github.io/Chip_N_Dale) 아이콘 클릭!
 
 <br>
 
