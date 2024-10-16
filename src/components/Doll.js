@@ -22,19 +22,32 @@ export default function Doll({ images }) {
     setSelectedImage(null); // 모달 닫기
   };
 
+  // 이미지를 3개씩 나누는 함수
+  const groupImages = (images, groupSize) => {
+    const groups = [];
+    for (let i = 0; i < images.length; i += groupSize) {
+      groups.push(images.slice(i, i + groupSize));
+    }
+    return groups;
+  };
+
+  const groupedImages = groupImages(images, 3);
+
   return (
     <>
       <div className="doll">
-        <div>인형 페이지</div>
+        <h3>인형 페이지</h3>
         {/* Doll 관련 이미지를 렌더링 */}
-        <ul className="main_box">
-          {images.map((image, index) => (
-            <li className="main_items" key={index} onClick={() => openModal(image)}>
-              <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
-              {/* <div>{image.alt}</div> */}
-            </li>
-          ))}
-        </ul>
+        {groupedImages.map((group, index) => (
+          <ul className="main_box" key={index}>
+            {group.map((image, idx) => (
+              <li className="main_items" key={idx} onClick={() => openModal(image)}>
+                <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
+                {/* <div>{image.alt}</div> */}
+              </li>
+            ))}
+          </ul>
+        ))}
         <ImageModal image={selectedImage} onClose={closeModal} /> {/* ImageModal 추가 */}
       </div>
     </>

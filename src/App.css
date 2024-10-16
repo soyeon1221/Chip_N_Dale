@@ -5,6 +5,7 @@ body, html, p, h1, ul, li {
 body {
   width: 100%;
   background-color: #f5eeee;
+  color: #4b1414;
 }
 a {
   text-decoration: none;
@@ -82,9 +83,13 @@ ul, li {
   padding: 20px 0;
 }
 .main_box {
+  padding-bottom: 50px;
+}
+.main_grouped {
   display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
+  justify-content: flex-start;
+  padding: 10px 12px;
+  gap: 23px;
 }
 .main_items {
   width: 120px;
@@ -98,6 +103,20 @@ ul, li {
 }
 .main_items img:hover {
   opacity: 1;
+}
+.main-title {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  align-items: baseline;
+}
+.main-title h2 {
+  margin: 0;
+  padding-left: 50px;
+}
+.more {
+  font-size: 12px;
+  padding-left: 20px;
 }
 
 
@@ -129,6 +148,7 @@ ul, li {
   padding: 20px 0;
   font-size: 14px;
   color: #4b1414;
+  line-height: 22px;
 }
 .close-button {
   margin-top: 10px;
