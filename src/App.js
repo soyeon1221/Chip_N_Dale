@@ -17,13 +17,13 @@ export default function App() {
     { src: '/images/doll/하얀망토 인형.jpg', alt: '하얀망토 인형', description: '승호가 올어바웃캐릭터에서 사준 인형' },
     { src: '/images/doll/멍청 인형.jpg', alt: '멍청 인형', description: '승호가 올어바웃캐릭터에서 사준 인형' },
     { src: '/images/doll/버섯 인형.jpg', alt: '버섯 인형', description: '2022년에 생일선물로 받은 인형 \n칩 : 경민언니 \n데일 : 혜영언니' },
-    { src: '/images/doll/티슈보관 인형.jpg', alt: '티슈보관 인형', description: '승호가 사준 각티슈 보관함' },
-    { src: '/images/doll/에어팟 가방.jpg', alt: '에어팟 가방', description: '에어팟 넣을 수 있는 작은 가방' },
     { src: '/images/doll/키크니 인형.jpg', alt: '키크니 인형', description: '승호가 올어바웃캐릭터에서 사준 인형' },
     { src: '/images/doll/납작 인형.jpg', alt: '납작 인형', description: '다이소 인형' },
     { src: '/images/doll/데일 얼굴 인형.jpg', alt: '데일 얼굴 인형', description: '다이소 인형' },
     { src: '/images/doll/가방고리 인형.jpg', alt: '가방고리 인형', description: '2016년도에 주연이가 스퀘어원에서 뽑아준 인형' },
     { src: '/images/doll/디즈니랜드 인형.jpg', alt: '디즈니랜드 인형', description: '2017년도에 주연이가 친구한테 부탁해서 \n일본 디즈니랜드에서 사다 준 인형 \n가방에 달고 다니다가 잃어버림..ㅜ_ㅜ' },
+    { src: '/images/doll/.jpg', alt: '', description: '' },
+    { src: '/images/doll/.jpg', alt: '', description: '' },
     { src: '/images/doll/.jpg', alt: '', description: '' },
   ];
 
@@ -49,7 +49,7 @@ export default function App() {
   const livingImages = [
     // { src: '/images/living/.jpg', alt: '', description: '' },
     { src: '/images/living/하겐다즈.jpg', alt: '하겐다즈 우드트레이', description: '2022년에 주연이한테 생일선물로 받은\n우드트레이' },
-    { src: '/images/living/.jpg', alt: '', description: '' },
+    { src: '/images/doll/티슈보관 인형.jpg', alt: '티슈보관 인형', description: '승호가 사준 각티슈 보관함' },
     { src: '/images/living/.jpg', alt: '', description: '' },
   ];
 
@@ -57,6 +57,7 @@ export default function App() {
     // { src: '/images/bag/.jpg', alt: '', description: '' },
     { src: '/images/bag/지갑.jpg', alt: '잃어버린 지갑', description: '2020년에 아빠가 사준 지갑 \n술먹고 자전거타다가 잃어버림...ㅜ-ㅜ' },
     { src: '/images/bag/동전 지갑.jpg', alt: '양면 동전 지갑', description: '혜영언니가 사준 양면 \n칩데 동전지갑' },
+    { src: '/images/doll/에어팟 가방.jpg', alt: '에어팟 가방', description: '에어팟 넣을 수 있는 작은 가방' },
     { src: '/images/bag/.jpg', alt: '', description: '' },
   ];
 
