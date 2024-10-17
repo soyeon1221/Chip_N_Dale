@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ImageModal from './ImageModal';
 
-export default function Figures({ images }) {
+export default function Bag({ images }) {
   const [selectedImage, setSelectedImage] = useState(null); // 선택된 이미지를 저장할 상태
 
   const openModal = (image) => {
@@ -26,8 +26,7 @@ export default function Figures({ images }) {
   return (
     <>
       <div className="pages-wrap">
-        <h3>피규어 페이지</h3>
-        {/* Figures 관련 이미지를 렌더링 */}
+        <h3>가방 / 잡화 페이지</h3>
         {groupedImages.map((group, index) => (
           <ul className="main_grouped" key={index}>
             {group.map((image, idx) => (

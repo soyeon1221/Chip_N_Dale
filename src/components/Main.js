@@ -1,90 +1,10 @@
-
-// export default function Main() {
-//   return (
-//     <>
-//       <div className="main">
-//         <div className="main_wrap">
-//           <ul className="main_grouped">
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/호랑이 인형.jpg'} />
-//               <div>인형</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/하얀망토 인형.jpg'} />
-//               <div>인형</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/티슈보관 인형.jpg'} />
-//               <div>인형</div>
-//             </li>
-//           </ul>
-//           <ul className="main_grouped">
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/수원역 피규어.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/하겐다즈.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/훌라후프 피규어.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//           </ul>
-//           <ul className="main_grouped">
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어2.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어3.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//           </ul>
-//           <ul className="main_grouped">
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어4.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어5.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어6.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//           </ul>
-//           <ul className="main_grouped">
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어7.jpg'} />
-//               <div>피규어</div>
-//             </li>
-//             <li className="main_items">
-//               <img src={process.env.PUBLIC_URL + '/images/동전 지갑.jpg'} />
-//               <div>지갑</div>
-//             </li>
-//             <li className="main_items">
-//               {/* <img src={process.env.PUBLIC_URL + '/images/팝마트 피규어6.jpg'} /> */}
-//               <div></div>
-//             </li>
-//           </ul>
-//         </div>
-//       </div>
-//     </>
-//   )
-// }
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ImageModal from './ImageModal';
 
-export default function Main({ dollImages = [], figuresImages = [] }) {
+export default function Main({ 
+  dollImages = [], figuresImages = [], stationeryImages = [], livingImages = [], bagImages = [], digitalImages = [], etcImages = []
+}) {
   // dollImages와 figuresImages라는 props를 받아온다
   // 기본값을 빈 배열로 설정되어 있어 props가 제공되지 않을 경우에도 코드가 정상 작동한다
 
@@ -92,7 +12,7 @@ export default function Main({ dollImages = [], figuresImages = [] }) {
   // 선택된 이미지를 저장하는 상태 변수 (초기값은 null)
   // setSelectedImage : selectedImage 상태를 업데이트하는 함수
 
-  const [visibleGroups, setVisibleGroups] = useState(2); 
+  const [visibleGroups, setVisibleGroups] = useState(1); 
   // 기본적으로 2개 그룹(6개 이미지) 표시
   // useState 훅을 사용하여 visibleGroups라는 상태 변수를 생성 (현재 보이는 이미지 그룹의 수를 나타낸다)
 
@@ -116,11 +36,14 @@ export default function Main({ dollImages = [], figuresImages = [] }) {
     return groups; // 그룹화된 배열을 반환
   };
 
+  // 3개씩 그룹화한 결과
   const groupedDollImages = groupImages(dollImages, 3);
-  // dollImages를 3개씩 그룹화한 결과
-
   const groupedFiguresImages = groupImages(figuresImages, 3);
-  // figuresImages를 3개씩 그룹화한 결과
+  const groupedStationeryImages = groupImages(stationeryImages, 3)
+  const groupedLivingImages = groupImages(livingImages, 3);
+  const groupedBagImages = groupImages(bagImages, 3);
+  const groupedDigitalImages = groupImages(digitalImages, 3);
+  const groupedEtcImages = groupImages(etcImages, 3);
 
   return (
     <>
@@ -149,6 +72,91 @@ export default function Main({ dollImages = [], figuresImages = [] }) {
               <Link to="/figures" className='more'>더보기</Link>
             </div>
             {groupedFiguresImages.slice(0, visibleGroups).map((group, index) => (
+              <ul className="main_grouped" key={index}>
+                {group.map((image, idx) => (
+                  <li className="main_items" key={idx} onClick={() => openModal(image)}>
+                    <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
+                    {/* <div>{image.alt}</div> */}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+
+          <div className='main_box'>
+            <div className='main-title'>
+              <h2>문구류</h2>
+              <Link to="/stationery" className='more'>더보기</Link>
+            </div>
+            {groupedStationeryImages.slice(0, visibleGroups).map((group, index) => (
+              <ul className="main_grouped" key={index}>
+                {group.map((image, idx) => (
+                  <li className="main_items" key={idx} onClick={() => openModal(image)}>
+                    <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
+                    {/* <div>{image.alt}</div> */}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+
+          <div className='main_box'>
+            <div className='main-title'>
+              <h2>생활 / 주방용품</h2>
+              <Link to="/living" className='more'>더보기</Link>
+            </div>
+            {groupedLivingImages.slice(0, visibleGroups).map((group, index) => (
+              <ul className="main_grouped" key={index}>
+                {group.map((image, idx) => (
+                  <li className="main_items" key={idx} onClick={() => openModal(image)}>
+                    <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
+                    {/* <div>{image.alt}</div> */}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+
+          <div className='main_box'>
+            <div className='main-title'>
+              <h2>가방 / 잡화</h2>
+              <Link to="/bag" className='more'>더보기</Link>
+            </div>
+            {groupedBagImages.slice(0, visibleGroups).map((group, index) => (
+              <ul className="main_grouped" key={index}>
+                {group.map((image, idx) => (
+                  <li className="main_items" key={idx} onClick={() => openModal(image)}>
+                    <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
+                    {/* <div>{image.alt}</div> */}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+
+          <div className='main_box'>
+            <div className='main-title'>
+              <h2>디지털</h2>
+              <Link to="/digital" className='more'>더보기</Link>
+            </div>
+            {groupedDigitalImages.slice(0, visibleGroups).map((group, index) => (
+              <ul className="main_grouped" key={index}>
+                {group.map((image, idx) => (
+                  <li className="main_items" key={idx} onClick={() => openModal(image)}>
+                    <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
+                    {/* <div>{image.alt}</div> */}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
+
+          <div className='main_box'>
+            <div className='main-title'>
+              <h2>기타</h2>
+              <Link to="/etc" className='more'>더보기</Link>
+            </div>
+            {groupedEtcImages.slice(0, visibleGroups).map((group, index) => (
               <ul className="main_grouped" key={index}>
                 {group.map((image, idx) => (
                   <li className="main_items" key={idx} onClick={() => openModal(image)}>

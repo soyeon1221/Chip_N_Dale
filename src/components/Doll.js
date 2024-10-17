@@ -1,13 +1,3 @@
-// export default function Daiso() {
-//   return (
-//     <>
-//       <div className="daiso">
-//         <div>다이소 페이지</div>
-//       </div>
-//     </>
-//   )
-// }
-
 import { useState } from 'react';
 import ImageModal from './ImageModal';
 
@@ -35,7 +25,7 @@ export default function Doll({ images }) {
 
   return (
     <>
-      <div className="doll">
+      <div className="pages-wrap">
         <h3>인형 페이지</h3>
         {/* Doll 관련 이미지를 렌더링 */}
         {groupedImages.map((group, index) => (

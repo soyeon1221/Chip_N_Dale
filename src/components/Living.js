@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ImageModal from './ImageModal';
 
-export default function Figures({ images }) {
+export default function Living({ images }) {
   const [selectedImage, setSelectedImage] = useState(null); // 선택된 이미지를 저장할 상태
 
   const openModal = (image) => {
@@ -12,7 +12,7 @@ export default function Figures({ images }) {
     setSelectedImage(null); // 모달 닫기
   };
 
-  // 이미지를 그룹화하는 함수 (한 그룹에 3개의 이미지가 포함된다)
+  // 이미지를 3개씩 나누는 함수
   const groupImages = (images, groupSize) => {
     const groups = [];
     for (let i = 0; i < images.length; i += groupSize) {
@@ -26,8 +26,7 @@ export default function Figures({ images }) {
   return (
     <>
       <div className="pages-wrap">
-        <h3>피규어 페이지</h3>
-        {/* Figures 관련 이미지를 렌더링 */}
+        <h3>생활 / 주방 용품 페이지</h3>
         {groupedImages.map((group, index) => (
           <ul className="main_grouped" key={index}>
             {group.map((image, idx) => (
@@ -38,7 +37,7 @@ export default function Figures({ images }) {
             ))}
           </ul>
         ))}
-        <ImageModal image={selectedImage} onClose={closeModal} /> {/* ImageModal 추가 */}
+        <ImageModal image={selectedImage} onClose={closeModal} />
       </div>
     </>
   );

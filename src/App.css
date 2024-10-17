@@ -83,7 +83,7 @@ ul, li {
   padding: 20px 0;
 }
 .main_box {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .main_grouped {
   display: flex;
@@ -162,18 +162,8 @@ ul, li {
 }
 
 
-/* Doll */
-.doll {
-  width: 100%;
-  position: relative;
-  max-width: 430px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-
-/* Figures */
-.figures {
+/* Pages */
+.pages-wrap {
   width: 100%;
   position: relative;
   max-width: 430px;
