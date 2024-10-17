@@ -11,6 +11,7 @@ import Digital from './components/Digital';
 import Etc from './components/Etc';
 
 export default function App() {
+  // 인형
   const dollImages = [
     // { src: '/images/doll/.jpg', alt: '', description: '' },
     { src: '/images/doll/호랑이 인형.jpg', alt: '호랑이 인형', description: '2022년 호랑이해 기념해서 나온 인형' },
@@ -27,6 +28,7 @@ export default function App() {
     { src: '/images/doll/.jpg', alt: '', description: '' },
   ];
 
+  // 피규어
   const figuresImages = [
     // { src: '/images/figures/.jpg', alt: '', description: '' },
     { src: '/images/figures/수원역 피규어.jpg', alt: '수원역 피규어', description: '수원역 스모어마켓에서 가챠해서 \n한번에 칩데 데려오기 성공!' },
@@ -41,18 +43,7 @@ export default function App() {
     { src: '/images/figures/.jpg', alt: '', description: '' },
   ];
 
-  const stationeryImages = [
-    // { src: '/images/stationery/.jpg', alt: '', description: '' },
-    { src: '/images/stationery/.jpg', alt: '', description: '' },
-  ];
-
-  const livingImages = [
-    // { src: '/images/living/.jpg', alt: '', description: '' },
-    { src: '/images/living/하겐다즈.jpg', alt: '하겐다즈 우드트레이', description: '2022년에 주연이한테 생일선물로 받은\n우드트레이' },
-    { src: '/images/doll/티슈보관 인형.jpg', alt: '티슈보관 인형', description: '승호가 사준 각티슈 보관함' },
-    { src: '/images/living/.jpg', alt: '', description: '' },
-  ];
-
+  // 가방 / 잡화
   const bagImages = [
     // { src: '/images/bag/.jpg', alt: '', description: '' },
     { src: '/images/bag/지갑.jpg', alt: '잃어버린 지갑', description: '2020년에 아빠가 사준 지갑 \n술먹고 자전거타다가 잃어버림...ㅜ-ㅜ' },
@@ -61,6 +52,21 @@ export default function App() {
     { src: '/images/bag/.jpg', alt: '', description: '' },
   ];
 
+  // 생활 / 주방용품
+  const livingImages = [
+    // { src: '/images/living/.jpg', alt: '', description: '' },
+    { src: '/images/living/하겐다즈.jpg', alt: '하겐다즈 우드트레이', description: '2022년에 주연이한테 생일선물로 받은\n우드트레이' },
+    { src: '/images/doll/티슈보관 인형.jpg', alt: '티슈보관 인형', description: '승호가 사준 각티슈 보관함' },
+    { src: '/images/living/.jpg', alt: '', description: '' },
+  ];
+
+  // 문구류
+  const stationeryImages = [
+    // { src: '/images/stationery/.jpg', alt: '', description: '' },
+    { src: '/images/stationery/.jpg', alt: '', description: '' },
+  ];
+
+  // 디지털
   const digitalImages = [
     // { src: '/images/digital/.jpg', alt: '', description: '' },
     { src: '/images/digital/커플 케이스.jpg', alt: '커플 케이스', description: '승호랑 커플 케이스' },
@@ -68,6 +74,7 @@ export default function App() {
     { src: '/images/digital/.jpg', alt: '', description: '' },
   ];
 
+  // 기타
   const etcImages = [
     // { src: '/images/etc/.jpg', alt: '', description: '' },
     { src: '/images/etc/.jpg', alt: '', description: '' },
@@ -82,9 +89,9 @@ export default function App() {
             <Main 
               dollImages={dollImages} 
               figuresImages={figuresImages} 
-              stationeryImages={stationeryImages} 
-              livingImages={livingImages} 
               bagImages={bagImages}
+              livingImages={livingImages} 
+              stationeryImages={stationeryImages} 
               digitalImages={digitalImages}
               etcImages={etcImages}
             />
@@ -92,9 +99,9 @@ export default function App() {
         />
         <Route path="/doll" element={<Doll images={dollImages} />} />
         <Route path="/figures" element={<Figures images={figuresImages} />} />
-        <Route path="/stationery" element={<Stationery images={stationeryImages} />} />
-        <Route path="/living" element={<Living images={livingImages} />} />
         <Route path="/bag" element={<Bag images={bagImages} />} />
+        <Route path="/living" element={<Living images={livingImages} />} />
+        <Route path="/stationery" element={<Stationery images={stationeryImages} />} />
         <Route path="/digital" element={<Digital images={digitalImages} />} />
         <Route path="/etc" element={<Etc images={etcImages} />} />
         {/* 필요한 다른 라우트 추가 */}

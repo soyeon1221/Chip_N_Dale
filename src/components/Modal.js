@@ -17,13 +17,13 @@ export default function Modal() {
         <Link to="/figures" className='modal_menu'>피규어</Link>
       </div>
       <div>
-        <Link to="/stationery" className='modal_menu'>문구류</Link>
+        <Link to="/bag" className='modal_menu'>가방 / 잡화</Link>
       </div>
       <div>
         <Link to="/living" className='modal_menu'>생활 / 주방용품</Link>
       </div>
       <div>
-        <Link to="/bag" className='modal_menu'>가방 / 잡화</Link>
+        <Link to="/stationery" className='modal_menu'>문구류</Link>
       </div>
       <div>
         <Link to="/digital" className='modal_menu'>디지털</Link>

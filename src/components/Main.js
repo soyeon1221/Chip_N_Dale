@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ImageModal from './ImageModal';
 
 export default function Main({ 
-  dollImages = [], figuresImages = [], stationeryImages = [], livingImages = [], bagImages = [], digitalImages = [], etcImages = []
+  dollImages = [], figuresImages = [], bagImages = [], livingImages = [], stationeryImages = [], digitalImages = [], etcImages = []
 }) {
   // dollImages와 figuresImages라는 props를 받아온다
   // 기본값을 빈 배열로 설정되어 있어 props가 제공되지 않을 경우에도 코드가 정상 작동한다
@@ -39,9 +39,9 @@ export default function Main({
   // 3개씩 그룹화한 결과
   const groupedDollImages = groupImages(dollImages, 3);
   const groupedFiguresImages = groupImages(figuresImages, 3);
-  const groupedStationeryImages = groupImages(stationeryImages, 3)
-  const groupedLivingImages = groupImages(livingImages, 3);
   const groupedBagImages = groupImages(bagImages, 3);
+  const groupedLivingImages = groupImages(livingImages, 3);
+  const groupedStationeryImages = groupImages(stationeryImages, 3)
   const groupedDigitalImages = groupImages(digitalImages, 3);
   const groupedEtcImages = groupImages(etcImages, 3);
 
@@ -85,10 +85,10 @@ export default function Main({
 
           <div className='main_box'>
             <div className='main-title'>
-              <h2>문구류</h2>
-              <Link to="/stationery" className='more'>더보기</Link>
+              <h2>가방 / 잡화</h2>
+              <Link to="/bag" className='more'>더보기</Link>
             </div>
-            {groupedStationeryImages.slice(0, visibleGroups).map((group, index) => (
+            {groupedBagImages.slice(0, visibleGroups).map((group, index) => (
               <ul className="main_grouped" key={index}>
                 {group.map((image, idx) => (
                   <li className="main_items" key={idx} onClick={() => openModal(image)}>
@@ -119,10 +119,10 @@ export default function Main({
 
           <div className='main_box'>
             <div className='main-title'>
-              <h2>가방 / 잡화</h2>
-              <Link to="/bag" className='more'>더보기</Link>
+              <h2>문구류</h2>
+              <Link to="/stationery" className='more'>더보기</Link>
             </div>
-            {groupedBagImages.slice(0, visibleGroups).map((group, index) => (
+            {groupedStationeryImages.slice(0, visibleGroups).map((group, index) => (
               <ul className="main_grouped" key={index}>
                 {group.map((image, idx) => (
                   <li className="main_items" key={idx} onClick={() => openModal(image)}>
