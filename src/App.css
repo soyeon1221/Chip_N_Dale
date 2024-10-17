@@ -87,9 +87,9 @@ ul, li {
 }
 .main_grouped {
   display: flex;
-  justify-content: flex-start;
-  padding: 10px 12px;
-  gap: 23px;
+  justify-content: space-between;
+  padding: 10px;
+  /* gap: 23px; */
 }
 .main_items {
   width: 120px;

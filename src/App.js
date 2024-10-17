@@ -18,6 +18,7 @@ export default function App() {
     { src: '/images/납작 인형.jpg', alt: '납작 인형', description: '다이소 인형' },
     { src: '/images/데일 얼굴 인형.jpg', alt: '데일 얼굴 인형', description: '다이소 인형' },
     { src: '/images/커플 케이스.jpg', alt: '커플 케이스', description: '승호랑 커플 케이스' },
+    { src: '/images/.jpg', alt: '', description: '' },
   ];
 
   // { src: '/images/.jpg', alt: '', description: '' },

@@ -39,7 +39,7 @@ export default function Doll({ images }) {
         <h3>인형 페이지</h3>
         {/* Doll 관련 이미지를 렌더링 */}
         {groupedImages.map((group, index) => (
-          <ul className="main_box" key={index}>
+          <ul className="main_grouped" key={index}>
             {group.map((image, idx) => (
               <li className="main_items" key={idx} onClick={() => openModal(image)}>
                 <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} />
