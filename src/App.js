@@ -22,8 +22,8 @@ export default function App() {
     { src: '/images/doll/키크니 인형.jpg', alt: '키크니 인형', description: '승호가 [올어바웃캐릭터]에서 사준 인형' },
     { src: '/images/doll/납작 인형.jpg', alt: '납작 인형', description: '[다이소] 인형' },
     { src: '/images/doll/데일 얼굴 인형.jpg', alt: '데일 얼굴 인형', description: '[다이소] 인형' },
-    { src: '/images/doll/가방고리 인형.jpg', alt: '가방고리 인형', description: '2016년도에 주연이가 [스퀘어원]에서 뽑아준 인형' },
-    { src: '/images/doll/디즈니랜드 인형.jpg', alt: '디즈니랜드 인형', description: '2017년도에 주연이가 친구한테 부탁해서 \n[일본 디즈니랜드]에서 사다 준 인형 \n가방에 달고 다니다가 잃어버림..ㅜ_ㅜ' },
+    { src: '/images/doll/가방고리 인형.JPG', alt: '가방고리 인형', description: '2016년도에 주연이가 [스퀘어원]에서 뽑아준 인형' },
+    { src: '/images/doll/디즈니랜드 인형.JPG', alt: '디즈니랜드 인형', description: '2017년도에 주연이가 친구한테 부탁해서 \n[일본 디즈니랜드]에서 사다 준 인형 \n가방에 달고 다니다가 잃어버림..ㅜ_ㅜ' },
     { src: '/images/doll/.jpg', alt: '', description: '' },
     { src: '/images/doll/.jpg', alt: '', description: '' },
     { src: '/images/doll/.jpg', alt: '', description: '' },
@@ -62,6 +62,7 @@ export default function App() {
     { src: '/images/living/티슈보관 인형.jpg', alt: '티슈보관 인형', description: '승호가 사준 각티슈 보관함' },
     { src: '/images/living/소주잔.jpg', alt: '소주잔', description: '망원역 [버섯이네잡화점]에서 \n승호가 사준 칩앤데일 소주잔' },
     { src: '/images/living/실내화.jpg', alt: '실내화', description: '엄마가 사준 실내화 \n지금까지 신었던 실내화중에 최고!' },
+    { src: '/images/living/디즈니랜드 땅콩컵.jpg', alt: '디즈니랜드 땅콩컵', description: '미국 디즈니랜드 갔을때 사온 땅콩컵' },
     { src: '/images/living/젓가락.jpg', alt: '젓가락', description: '주연이 / 혜엉언니가 사준 \n칩앤데일 정품 젓가락' },
     { src: '/images/living/발매트.jpg', alt: '발매트', description: '[다이소] 발매트' },
     { src: '/images/living/주방장갑.jpg', alt: '주방장갑', description: '[다이소] 주방장갑' },
@@ -69,17 +70,25 @@ export default function App() {
     { src: '/images/living/핸드타월2.jpg', alt: '핸드타월2', description: '[다이소] 핸드타월2' },
     { src: '/images/living/수세미홀더.jpg', alt: '수세미홀더', description: '[다이소] 수세미홀더' },
     { src: '/images/living/페이스타월.jpg', alt: '페이스타월', description: '[다이소] 페이스타월' },
+    { src: '/images/living/다이소 수납함.jpg', alt: '다이소 수납함', description: '[다이소] 수납함' },
+    { src: '/images/living/.jpg', alt: '', description: '' },
     { src: '/images/living/.jpg', alt: '', description: '' },
   ];
 
   // 문구류
   const stationeryImages = [
     // { src: '/images/stationery/.jpg', alt: '', description: '' },
+    { src: '/images/stationery/얼굴 볼펜.jpg', alt: '얼굴 볼펜', description: '주연이가 사준 흔들리는 볼펜' },
+    { src: '/images/stationery/2색 볼펜.jpg', alt: '2색 볼펜', description: '양쪽 팔로 사용하는 2색 볼펜' },
+    { src: '/images/stationery/제트스트림 3색 볼펜.jpg', alt: '제트스트림 3색 볼펜', description: '제트스트림 3색 볼펜' },
     { src: '/images/stationery/메모패드.jpg', alt: '메모패드', description: '[다이소] 메모패드' },
     { src: '/images/stationery/마스킹 테이프.jpg', alt: '마스킹 테이프', description: '[다이소] 마스킹 테이프' },
     { src: '/images/stationery/편지지.jpg', alt: '편지지', description: '[다이소] 편지지' },
     { src: '/images/stationery/편지지2.jpg', alt: '편지지2', description: '소품샵에서 구매한 편지지' },
-    { src: '/images/stationery/.jpg', alt: '', description: '' },
+    { src: '/images/stationery/꼬질 볼펜.jpg', alt: '꼬질 볼펜', description: '오래 사용해서 꼬질꼬질해진 볼펜' },
+    { src: '/images/stationery/지우개.jpg', alt: '지우개', description: '주연이가 사준 지우개 케이스' },
+    { src: '/images/stationery/다이소 볼펜.jpg', alt: '다이소 볼펜', description: '[다이소] 볼펜' },
+    { src: '/images/stationery/다이소 샤프.jpg', alt: '다이소 샤프', description: '[다이소] 샤프' },
     { src: '/images/stationery/.jpg', alt: '', description: '' },
   ];
 
