@@ -54,17 +54,26 @@
 
 ### 1. 메인
 
+<img src="https://github.com/user-attachments/assets/e225ba90-4c01-4e51-9740-d83a5dc22ce8" width="650px" height="553px">
+
+
 - &#9776; 아이콘을 클릭하면 메뉴가 열립니다. 
 - 상단에 로고를 클릭하면 메인페이지로 이동합니다.
 
 
 ### 2. 카테고리별 페이지
 
+<img src="https://github.com/user-attachments/assets/81999620-0bce-43e5-b84b-7d1eaddf3522" width="650px" height="553px">
+
+
 - 메뉴에서 카테고리를 선택하거나 '더보기'버튼을 누르면 해당 페이지로 이동합니다.
 - 페이지 상단에는 현재 보고 있는 카테고리 이름이 표시되어 있어, 어떤 페이지인지 쉽게 확인할 수 있습니다.
 
 
 ### 3. 상세 정보 보기
+
+<img src="https://github.com/user-attachments/assets/cc0200bc-0f9f-46fa-bdf4-e78b2f13e49a" width="650px" height="553px">
+
 
 - 굿즈 이미지를 클릭하면 상세 정보를 확인할 수 있습니다.
 - Close 버튼을 누르면 모달창이 닫힙니다.
